@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PoKemoN Battle Statidum</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css" media="screen"/>  <!--ENLACE A ARCHIVO CSS-->
+    <script type="text/javascript" src="javascript.js"></script>                <!--ENLACE A ARCHIVO JS-->
+    <script type="text/javascript" src="pokemons.js"></script>                  <!--ENLACE A ARCHIVO JS-->
+  </head>
+
+  <body>
+    <div id="campo">
+      <div class="caja" id="jugador1_arena" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="caja" id="jugador2_arena" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="caja" id="the_grave"></div>
+    </div>
+
+    <div id="operaciones">
+      <form class="caja" id="formulario">
+        <select name="pokemon"  id="select">
+          <option value="pokeball" selected="selected">Pokemon</option>
+          <option value="bulbasur">Bulbasur</option>
+          <option value="charmander">Charmander</option>
+          <option value="squirtle">Squirtle</option>
+          <option value="pikachu">Pikachu</option>
+        </select>
+        <input type="button" value ="Fight!" onclick="if(player1 && player2){batalla(player1, player2);}"></input>
+      </form>
+      <div class="caja" id="cuadro">
+        <img id="marco" name="imagen" draggable="true" ondragstart="drag(event)" onclick="selector()" src="pokeball.png" width="100%" height="100%"><img/>
+      </div>
+      <div class="slider" id="narrador"></div> <!--estructura de pila inversa-->
+    </div>
+    <img src="background.png" id="logo"></img>
+  </body>
+</html>

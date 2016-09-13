@@ -1,0 +1,66 @@
+body{
+  background-image: url("psy.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-color: #fbcb05;
+}
+
+  #campo, #operaciones{
+    display: flex;
+  }
+
+  #logo{
+    margin-left: 150px:
+  }
+
+  #jugador1_arena{
+    background-image: url("battlefield.jpeg");
+  }
+
+  #jugador2_arena{
+    background-image: url("battlefield.jpeg");
+  }
+  .caja{
+    border-radius: 25px;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+  }
+
+  input{
+    margin-left: 35%;
+    margin-top: 25%;
+  }
+
+  #the_grave{
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+  	overflow y: scroll;
+    background-color: #ea503d;
+  }
+
+  #formulario{background-color: #fbcb05;}
+
+  #narrador{    border-radius: 25px;
+}
+
+  select{
+    margin-left: 20%;
+    margin-top: 25%;
+  }
+
+  .slider {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+  	overflow: scroll;;
+    background-color: #2f6cb5;
+  }
+
+  .mensaje{
+    padding: 5%;
+    margin-bottom: 1px;
+    font-size: 50%;
+    color: white;
+  }
